@@ -10,6 +10,7 @@ export const path = { // здесь хранится вся информация
 		css: `${buildFolder}/css`,
 		html: `${buildFolder}/`,
 		images: `${buildFolder}/img/`,
+		fonts: `${buildFolder}/fonts/`,
 		files: `${buildFolder}/files/`
 	}, // объект путей к папке с результатом
 	src: {
@@ -19,6 +20,8 @@ export const path = { // здесь хранится вся информация
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.pug`,
 		files: `${srcFolder}/files/**/*.*`,
+		svgicons: `${srcFolder}/svgicons/*.svg`,
+
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,
