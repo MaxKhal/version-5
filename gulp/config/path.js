@@ -6,15 +6,18 @@ const srcFolder = `./src`; // путь к папке с исходниками
 
 export const path = { // здесь хранится вся информация о пути к тому или иному файлу или папке
 	build: {
+		css: `${buildFolder}/css`,
 		html: `${buildFolder}/`,
 		files: `${buildFolder}/files/`
 	}, // объект путей к папке с результатом
 	src: {
-		html: `${srcFolder}/*.html`,
+		scss: `${srcFolder}/scss/style.scss`,
+		html: `${srcFolder}/*.pug`,
 		files: `${srcFolder}/files/**/*.*`,
 	},
 	watch: {
-		html: `${srcFolder}/**/*.html`,
+		scss: `${srcFolder}/scss/**/*.scss`,
+		html: `${srcFolder}/**/*.pug`,
 		files: `${srcFolder}/files/**/*.*`
 	}, // пути к файлам и папкам за которыми должен следить наш gulp и при любых изменениях выполнять определенные действия
 	clean: buildFolder,

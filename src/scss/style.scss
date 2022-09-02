@@ -1,0 +1,19 @@
+body {
+	background-color: black;
+	span {
+		color: red;
+	}
+	background-image: url('@img/135626674.jpg');
+}
+
+@media (max-width: 768px) {
+	span {
+		font-size: 20px;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		font-size: 20px;
+	}
+}
